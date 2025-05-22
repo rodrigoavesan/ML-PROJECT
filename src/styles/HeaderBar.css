@@ -1,0 +1,101 @@
+.custom-header {
+  background-color: #000080;
+  border: 3px solid white;
+  border-radius: 8px;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  color: white;
+}
+
+.header-text .line-1,
+.header-text .line-2 {
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 0;
+}
+
+.header-text .line-3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.logo-text-container {
+  padding-right: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  height: auto;
+  width: 70px;
+  object-fit: cover;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+    font-family: 'Fulldozer', sans-serif;
+}
+
+.subtitle {
+    font-family: 'Fulldozer', sans-serif;
+}
+
+.text-logo {
+  font-family: 'Fulldozer', sans-serif;
+  color: #E423FF;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 2px;
+  filter: drop-shadow(2px 2px 0 #000) 
+          drop-shadow(-2px 2px 0 #000) 
+          drop-shadow(2px -2px 0 #000) 
+          drop-shadow(-2px -2px 0 #000);
+}
+.text-logo::first-letter {
+  font-family: 'Fulldozer', sans-serif;
+  color: #22FEFF;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 2px;
+  filter: drop-shadow(2px 2px 0 #000) 
+          drop-shadow(-2px 2px 0 #000) 
+          drop-shadow(2px -2px 0 #000) 
+          drop-shadow(-2px -2px 0 #000);
+}
+
+.text-logo-gra{
+  font-family: 'Fulldozer', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #E423FF, #22FEFF);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 0 #000) 
+          drop-shadow(-2px 2px 0 #000) 
+          drop-shadow(2px -2px 0 #000) 
+          drop-shadow(-2px -2px 0 #000);
+}
+
+.ml-project {
+  line-height: 1;
+}
+
+.m-letter { color: #22FEFF; font-weight: bold; }
+.l-letter { color: #E423FF; font-weight: bold; }
+.project-text { color: #8391ff; font-weight: bold; }
