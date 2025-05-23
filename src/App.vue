@@ -1,7 +1,10 @@
+<style>
+@import url('/src/styles/main.css');
+</style>
 <template>
-  <div class="main-wrapper">
+  <div class="principal">
     <HeaderBar />
-    <main class="content-area bg-custom text-white py-4">
+    <main class="">
       <div class="container">
         <div class="text-center mb-4">
           <h2>Curso DSM - Fatec</h2>
