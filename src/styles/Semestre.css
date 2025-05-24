@@ -1,4 +1,4 @@
-.semestre-card {
+/* .semestre-card {
   background-color: #f8f9fa;
   border-radius: 8px;
   padding: 10px;
@@ -38,4 +38,40 @@
 .disciplinas-list li {
   padding: 4px 0;
   border-bottom: 1px solid #eee;
+} */
+.semestre-card {
+  background-color: var(--card-color);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  height: 196px;
+  width: 297px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.semestre-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.semestre-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.disciplinas-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.disciplinas-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
 }

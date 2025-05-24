@@ -1,6 +1,7 @@
 @font-face {
-    font-family: Fulldozer;
-    src: url('/src/styles/fonts.css');
+    font-family: 'Fulldozer';
+    src: url('/src/assets/fonts/Fulldozer-BF67a9f36c0db20.otf') format('opentype');
     font-weight: bold;
-}
-
+    font-style: normal;
+  }
+  

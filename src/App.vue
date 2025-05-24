@@ -4,23 +4,17 @@
 <template>
   <div class="principal">
     <HeaderBar />
-    <main class="">
+    <main class="talvez">
       <div class="container">
         <div class="text-center mb-4">
-          <h2>Curso DSM - Fatec</h2>
-          <h4 >Disciplinas:</h4>
+          <div class="titulo-principal">Curso DSM - Fatec</div>
+          <h4>Disciplinas:</h4>
         </div>
-        <div class="card-disciplina">
-          <div
-            v-for="(semestre, index) in semestres"
-            :key="index"
-            class="semestre-wrapper"
-          >
-            <Semestre
-              :titulo="semestre.titulo"
-              :disciplinas="semestre.disciplinas"
-            />
-          </div>
+        <div class="card-disciplina-grid">
+          <transition-group name="fade-slide" class="card-disciplina-grid">
+            <Semestre v-for="(semestre, index) in semestres" :key="index" :titulo="semestre.titulo"
+              :disciplinas="semestre.disciplinas" :bgColor="index % 2 === 0 ? '#E6FA86' : '#95FEFF'" />
+          </transition-group>
         </div>
       </div>
     </main>
@@ -39,7 +33,7 @@ export default {
   data() {
     return {
       semestres: [
-        { titulo: "SEMESTRE 1", disciplinas: [] },
+        { titulo: "SEMESTRE 1", disciplinas: ["Modelagem de Banco de Dados", "Desenvolvimento Web I", "Algoritmo e Lógica de Programação", "Engenharia de Software I", "Design Digital", "Sistemas Operacionais e Redes de Computadores"] },
         { titulo: "SEMESTRE 2", disciplinas: [] },
         { titulo: "SEMESTRE 3", disciplinas: [] },
         { titulo: "SEMESTRE 4", disciplinas: [] },

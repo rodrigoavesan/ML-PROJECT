@@ -5,7 +5,9 @@
   <header class="custom-header">
     <div class="container d-flex flex-column justify-content-center h-100 py-3">
       <div class="text-center mb-3 header-text">
-        <h1 class="title title">FACULDADE DE TECNOLOGIA - FATEC</h1>
+        <h1 class="title" style="font-family: 'Fulldozer', sans-serif;">
+          FACULDADE DE TECNOLOGIA - FATEC
+        </h1>
         <h2 class="subtitle">CENTRO PAULA SOUZA DE FRANCA</h2>
       </div>
 

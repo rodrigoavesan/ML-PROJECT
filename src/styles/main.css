@@ -1,36 +1,73 @@
-:root {
-  --mlp-purple: #E423FF;
-  --mlp-cyan: #22FEFF;
+.talvez {
+  padding: 2rem 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.mlp-purple { color: var(--mlp-purple); }
-.mlp-cyan { color: var(--mlp-cyan); }
-
 .principal {
-  background: linear-gradient(180deg, hsla(181, 100%, 79%, 1) 0%, hsla(229, 100%, 71%, 1) 64%);
-  min-height: auto;
-  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    hsla(181, 100%, 79%, 1) 0%,
+    hsla(229, 100%, 71%, 1) 64%
+  );
 }
 
 .content-area {
   padding-top: 1rem;
 }
 
-.card-disciplina {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px; 
+.card-disciplina-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 1rem;
 }
 
-.card-disciplina .semestre-wrapper {
-  flex: 0 0 300px;
-  max-width: 1000px;
+.titulo-principal {
+  background: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
-  .card-disciplina .semestre-wrapper {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .card-disciplina-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 1rem;
   }
+}
+
+.text-center.mb-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.text-center.mb-4 h2 {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fade-slide-enter-active {
+  transition: all 0.5s ease;
+}
+.fade-slide-leave-active {
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(15px);
 }
