@@ -4,13 +4,11 @@
 <template>
   <div class="principal">
     <HeaderBar />
-    <main class="talvez">
-      <div class="container">
-        <div class="text-center mb-4">
-          <div class="titulo-principal">Curso DSM - Fatec</div>
+    <main>
+      <div class="titulo-principal">Curso DSM - Fatec</div>
+      <div class="container-principal">
+        <div class="card-disciplina-grid" :class="['semestre-wrapper', { 'semestre-ativo': semestre.ativo }]">
           <h4>Disciplinas:</h4>
-        </div>
-        <div class="card-disciplina-grid">
           <transition-group name="fade-slide" class="card-disciplina-grid">
             <Semestre v-for="(semestre, index) in semestres" :key="index" :titulo="semestre.titulo"
               :disciplinas="semestre.disciplinas" :bgColor="index % 2 === 0 ? '#E6FA86' : '#95FEFF'" />

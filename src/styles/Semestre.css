@@ -40,12 +40,11 @@
   border-bottom: 1px solid #eee;
 } */
 .semestre-card {
-  background-color: var(--card-color);
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  height: 196px;
-  width: 297px;
+  height: 150px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,14 +59,14 @@
 .semestre-title {
   text-align: center;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 25px;
   color: black;
   text-transform: uppercase;
   margin: 0;
 }
 
 .disciplinas-list {
-  list-style-type: none;
+  list-style-type: disc;
   padding-left: 0;
 }
 
