@@ -7,11 +7,11 @@
     <main>
       <div class="titulo-principal">Curso DSM - Fatec</div>
       <div class="container-principal">
-        <div class="card-disciplina-grid" :class="['semestre-wrapper', { 'semestre-ativo': semestre.ativo }]">
+        <div class="card-disciplina-grid" :class="['semestre-wrapper', { 'semestre-ativo': semestres.ativo }]">
           <h4>Disciplinas:</h4>
           <transition-group name="fade-slide" class="card-disciplina-grid">
-            <Semestre v-for="(semestre, index) in semestres" :key="index" :titulo="semestre.titulo"
-              :disciplinas="semestre.disciplinas" :bgColor="index % 2 === 0 ? '#E6FA86' : '#95FEFF'" />
+            <Semestre v-for="(semestres, index) in semestres" :key="index" :titulo="semestre.titulo"
+              :disciplinas="semestres.disciplinas" :bgColor="index % 2 === 0 ? '#E6FA86' : '#95FEFF'" />
           </transition-group>
         </div>
       </div>
