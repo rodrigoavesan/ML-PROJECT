@@ -25,16 +25,6 @@ export default {
       default: '#fff'
     }
   },
-  data() {
-    return {
-      aberto: false
-    };
-  },
-  methods: {
-    toggleOpen() {
-      this.aberto = !this.aberto;
-    }
-  }
 };
 </script>
 

@@ -8,6 +8,8 @@ main {
     hsla(181, 100%, 79%, 1) 0%,
     hsla(229, 100%, 71%, 1) 64%
   );
+  width: auto;
+  height: 946.5px;
 }
 
 .content-area {
@@ -16,21 +18,35 @@ main {
 
 .card-disciplina-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
+  row-gap: 55px;
+  column-gap: 79px;
   justify-items: center;
-  padding: 1rem;
+  width: 1049px;
+  height: 447px;
+}
+
+.container-principal {
+  width: 1181px;
+  height: 537px;
+  background-color: white;
+  margin-inline: auto;
+  margin-top: 29px;
+  border-radius: 0 40px 40px 40px;
+  padding-inline: 64px;
+  padding-top: 10px;
 }
 
 .titulo-principal {
   background: white;
   display: flex;
   padding: 0.5rem 1rem;
+  margin-left: 343px;
   border-radius: 20px;
   font-weight: bold;
   font-size: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 100vh;
+  width: 517px;
 }
 
 

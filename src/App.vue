@@ -5,14 +5,12 @@
   <div class="principal">
     <HeaderBar />
     <main>
-      <div class="titulo-principal">Curso DSM - Fatec</div>
+      <div class="titulo-principal">Curso DSM - Fatec:</div>
       <div class="container-principal">
-        <div class="card-disciplina-grid" :class="['semestre-wrapper', { 'semestre-ativo': semestre.ativo }]">
-          <h4>Disciplinas:</h4>
-          <transition-group name="fade-slide" class="card-disciplina-grid">
-            <Semestre v-for="(semestre, index) in semestres" :key="index" :titulo="semestre.titulo"
-              :disciplinas="semestre.disciplinas" :bgColor="index % 2 === 0 ? '#E6FA86' : '#95FEFF'" />
-          </transition-group>
+        <h4 class="disciplina-title">Disciplinas:</h4>
+        <div class="card-disciplina-grid" :class="['semestre-wrapper', { 'semestre-ativo': semestres.ativo }]">
+          <Semestre v-for="(semestres, index) in semestres" :key="index" :titulo="semestres.titulo"
+            :bgColor="index % 2 === 0 ? 'rgba(230, 250, 134, 0.8)' : 'rgba(149, 254, 255, 0.8)'" />
         </div>
       </div>
     </main>
@@ -31,12 +29,12 @@ export default {
   data() {
     return {
       semestres: [
-        { titulo: "SEMESTRE 1", disciplinas: ["Modelagem de Banco de Dados", "Desenvolvimento Web I", "Algoritmo e Lógica de Programação", "Engenharia de Software I", "Design Digital", "Sistemas Operacionais e Redes de Computadores"] },
-        { titulo: "SEMESTRE 2", disciplinas: [] },
-        { titulo: "SEMESTRE 3", disciplinas: [] },
-        { titulo: "SEMESTRE 4", disciplinas: [] },
-        { titulo: "SEMESTRE 5", disciplinas: [] },
-        { titulo: "SEMESTRE 6", disciplinas: [] }
+        { titulo: "SEMESTRE 1" },
+        { titulo: "SEMESTRE 2" },
+        { titulo: "SEMESTRE 3" },
+        { titulo: "SEMESTRE 4" },
+        { titulo: "SEMESTRE 5" },
+        { titulo: "SEMESTRE 6" }
       ]
     };
   }

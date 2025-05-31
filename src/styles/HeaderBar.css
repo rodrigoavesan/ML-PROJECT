@@ -38,6 +38,7 @@
   object-fit: cover;
   padding-right: 10px;
   padding-bottom: 10px;
+  border-radius: 20px;
 }
 
 .title {
@@ -91,11 +92,3 @@
           drop-shadow(2px -2px 0 #000) 
           drop-shadow(-2px -2px 0 #000);
 }
-
-.ml-project {
-  line-height: 1;
-}
-
-.m-letter { color: #22FEFF; font-weight: bold; }
-.l-letter { color: #E423FF; font-weight: bold; }
-.project-text { color: #8391ff; font-weight: bold; }
