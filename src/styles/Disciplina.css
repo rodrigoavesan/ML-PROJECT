@@ -1,8 +1,8 @@
-.semestre-card {
+.disciplina-card {
   border-radius: 16px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   min-height: 160px;
-  min-width: 240px;
+  min-width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,17 +12,7 @@
   cursor: pointer;
 }
 
-.semestre-card:hover {
+.disciplina-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.semestre-title,
-.disciplina-title,
-.cabecalho-title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 25px;
-  color: black;
-  text-transform: uppercase;
 }

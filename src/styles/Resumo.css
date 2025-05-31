@@ -1,0 +1,46 @@
+.resumo-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.resumo-titulo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.resumo-texto {
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    line-height: 1.6;
+}
+
+.botao-voltar {
+    margin-top: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #f0f0f0;
+}
+
+.resumo-conteudo {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}

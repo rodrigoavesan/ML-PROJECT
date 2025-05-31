@@ -8,8 +8,8 @@ main {
     hsla(181, 100%, 79%, 1) 0%,
     hsla(229, 100%, 71%, 1) 64%
   );
-  width: auto;
-  height: 946.5px;
+  min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 .content-area {
@@ -17,6 +17,43 @@ main {
 }
 
 .card-disciplina-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.container-principal {
+  max-width: 1180px;
+  width: 100%;
+  background-color: white;
+  margin: 29px auto 0 auto;
+  border-radius: 0 40px 40px 40px;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.titulo-principal {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0 auto 2rem auto;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 63%;
+}
+
+
+.semestre-ativo {
+  border: 2px solid var(--mlp-cyan, #22FEFF);
+  background-color: rgba(34, 254, 255, 0.1);
+}
+
+.disciplinas-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 4fr));
   row-gap: 55px;
@@ -26,43 +63,48 @@ main {
   height: 447px;
 }
 
-.container-principal {
-  width: 1181px;
-  height: 537px;
-  background-color: white;
-  margin-inline: auto;
-  margin-top: 29px;
-  border-radius: 0 40px 40px 40px;
-  padding-inline: 64px;
-  padding-top: 10px;
-}
-
-.titulo-principal {
-  background: white;
+.disciplinas-wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.voltar-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  max-width: 1180px;
+  box-sizing: border-box;
+}
+
+.botao-voltar {
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ccc;
+  border-radius: 12px;
   padding: 0.5rem 1rem;
-  margin-left: 343px;
-  border-radius: 20px;
   font-weight: bold;
-  font-size: 30px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 517px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-
-.semestre-ativo {
-  border: 2px solid var(--mlp-cyan);
-  background-color: rgba(34, 254, 255, 0.1);
+.botao-voltar:hover {
+  background-color: "f0f0f0";
 }
 
-@media (max-width: 768px) {
-  .card-disciplina-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    padding: 1rem;
-  }
+.disciplinas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1180px;
+  padding: 1rem;
+  box-sizing: border-box;
 }
-
 
 .fade-slide-enter-active {
   transition: all 0.5s ease;
@@ -75,4 +117,31 @@ main {
 .fade-slide-enter-from {
   opacity: 0;
   transform: translateY(15px);
+}
+
+.em-construcao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.imagem-construcao {
+  width: 200px;
+  max-width: 90%;
+  opacity: 0.9;
+  animation: pulse 1.8s infinite;
+  border-radius: 100%;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
 }
