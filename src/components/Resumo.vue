@@ -7,7 +7,6 @@
         <div class="resumo-texto">
             <slot></slot>
         </div>
-        <button class="botao-voltar" @click="$emit('voltar')">Voltar</button>
     </div>
 </template>
 
@@ -17,5 +16,6 @@ export default {
     props: {
         nome: String,
     },
+
 };
 </script>

@@ -2,6 +2,24 @@ main {
   padding: 2rem 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+}
+
+.sem-header {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
 .principal {
   background: linear-gradient(
     180deg,
@@ -73,10 +91,10 @@ main {
 .voltar-container {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
+  justify-content: flex-start;
   max-width: 1180px;
   box-sizing: border-box;
+  padding-left: 1rem;
 }
 
 .botao-voltar {
@@ -133,6 +151,68 @@ main {
   opacity: 0.9;
   animation: pulse 1.8s infinite;
   border-radius: 100%;
+}
+
+.faixa-gradiente {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 1.5vh;
+  width: 100%;
+  background: linear-gradient(to right, #22FEFF, #E7FA0D, #E423FF);
+  z-index: 9999;
+}
+
+.tela-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.icone-pegadas {
+  width: 300px;
+}
+
+.titulo-tutorial {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.botoes-tutorial {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.botao {
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+
+.assistir {
+  background-color: #f5a4ff;
+  color: #000;
+  border: 2px solid white;
+}
+
+.pular {
+  background-color: #efff94;
+  color: #000;
 }
 
 @keyframes pulse {

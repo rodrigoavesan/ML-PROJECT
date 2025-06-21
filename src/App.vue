@@ -1,4 +1,4 @@
-<style>
+<!-- <style>
 @import url('/src/styles/main.css');
 </style>
 <template>
@@ -123,5 +123,31 @@ export default {
       }
     }
   }
-};
+};<template>
+  <div class="principal">
+    <HeaderBar />
+    <router-view />
+  </div>
+</template>
+</script> -->
+<template>
+  <div :class="['principal', { 'sem-header': $route.meta.hideHeader }]">
+    <HeaderBar v-if="!$route.meta.hideHeader"/>
+    <router-view />
+    <div class="faixa-gradiente"></div>
+  </div>
+</template>
+
+<script>
+  import HeaderBar from './components/HeaderBar.vue';
+
+  export default {
+    components: {
+      HeaderBar
+    }
+  };
 </script>
+
+<style>
+@import url('/src/styles/main.css');
+</style>

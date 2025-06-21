@@ -3,6 +3,7 @@
 </style>
 <template>
   <header class="custom-header">
+    <i class="fa-solid fa-house" @click="home"></i>
     <div class="container d-flex flex-column justify-content-center h-100 py-3">
       <div class="text-center mb-3 header-text">
         <h1 class="title" style="font-family: 'Fulldozer', sans-serif;">
@@ -25,5 +26,10 @@
 <script>
 export default {
   name: "HeaderBar",
+  methods: {
+    home() {
+      this.$router.push('/')
+    }
+  }
 };
 </script>
