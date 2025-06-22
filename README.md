@@ -18,7 +18,7 @@
 
 Nosso projeto propõe a criação de uma plataforma web inovadora, projetada para se tornar uma biblioteca colaborativa de conteúdos acadêmicos. Focada inicialmente nas disciplinas do curso noturno de Desenvolvimento de Software Multiplataforma (DSM), a plataforma permitirá que os próprios estudantes publiquem e organizem materiais revisados, sejam eles frutos de trabalhos individuais ou em grupo.
 
-Para garantir a integridade do material compartilhado,implementaremos umafuncionalidade de "somenteleitura", similar ao modo deexibição de documentos. Acuradoria e a segurança do conteúdo serão asseguradas por uma combinação inteligente: uma inteligência artificial atuará natriagem inicial , enquanto moderadores humanos, parte da equipe do projeto, realizarão limpezas periódicas nas bibliotecas temporárias.
+Para garantir a integridade do material compartilhado,implementaremos uma funcionalidade de "somente leitura", similar ao modo de exibição de documentos. Acuradoria e a segurança do conteúdo serão asseguradas por uma combinação inteligente: uma inteligência artificial atuará natriagem inicial , enquanto moderadores humanos, parte da equipe do projeto, realizarão limpezas periódicas nas bibliotecas temporárias.
 
 ---
 
